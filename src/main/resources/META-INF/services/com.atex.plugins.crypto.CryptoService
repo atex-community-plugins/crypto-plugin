@@ -1,0 +1,3 @@
+# providers of CriptoService
+# (comment lines begin with pound)
+com.atex.plugins.crypto.CryptoServiceImpl
