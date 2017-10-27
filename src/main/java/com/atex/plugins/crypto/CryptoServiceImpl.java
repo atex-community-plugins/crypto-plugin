@@ -31,7 +31,7 @@ public class CryptoServiceImpl implements CryptoService {
     public String encrypt(final String value) {
 
         final PBKDF2 kdf = new PBKDF2(HMacFactory.getInstance("HMAC-SHA-256"));
-        final Map attr = Maps.newHashMap();
+        final Map<String, Object> attr = Maps.newHashMap();
         attr.put(IPBE.ITERATION_COUNT, new Integer(DEFAULT_ITERATIONS));
         attr.put(IPBE.PASSWORD, Strings.nullToEmpty(value).toCharArray());
         attr.put(IPBE.SALT, SECRET_KEY.getBytes(Charset.forName("UTF-8")));

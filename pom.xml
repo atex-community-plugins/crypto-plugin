@@ -7,7 +7,7 @@
   <artifactId>crypto-plugin</artifactId>
   <groupId>com.atex.plugins</groupId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-java7</version>
 
   <parent>
     <groupId>com.polopoly</groupId>
@@ -51,16 +51,16 @@
   <scm>
     <developerConnection>scm:git:git@github.com:atex-community-plugins/crypto-plugin.git</developerConnection>
     <url>https://github.com/atex-community-plugins/crypto-plugin</url>
-    <tag>HEAD</tag>
+    <tag>java7</tag>
   </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <polopoly.version>10.16.3-fp3</polopoly.version>
+    <polopoly.version>10.12.0</polopoly.version>
     <testnext.version>2.1.2</testnext.version>
     <selenium.version>2.53.1</selenium.version>
     <servlet-api.version>3.0.1</servlet-api.version>
-    <baseline.version>4.0.6-SNAPSHOT</baseline.version>
+    <baseline.version>4.0.2</baseline.version>
 
     <javadoc.opts />
   </properties>
@@ -144,8 +144,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.5.1</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>1.7</source>
+          <target>1.7</target>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
